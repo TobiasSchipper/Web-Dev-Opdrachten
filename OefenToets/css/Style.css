@@ -4,44 +4,103 @@
     display: grid;
     height: auto;
 }
+.Menu
+{
+    display: flex;
+    height: auto;
+    flex-direction: row-reverse;
+}
+.Menu > a
+{
+    padding-inline: 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: 10% ;
+}
 
 .Content
 {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    padding-top: 1rem;
 }
+
 .Content > .login
 {
     grid-column: 1;
 }
+.login
+{
+    padding: 1rem;
+    background-color:lightcoral;
+}
+.login > h2
+{
+    color: darkred;
+}
+form
+{
+    max-width: 10rem;
+}
+
 .Content > .centerContent
 {
     grid-column: 2;
 }
+.centerContent
+{
+    padding: 1rem;
+    background-color: rgb(255, 248, 156);
+}
+.centerContent > h2
+{
+    color: rgb(75, 75, 22);
+}
+
 .Content > .welcome
 {
     grid-column: 3;
 }
+.welcome
+{
+    background-color: lightgreen;
+    align-self: center;
+    padding: 1rem;
+}
+.welcome > h2
+{
+    color: green;
+}
 
 .Footer
 {
-    background-color: black;
+    display: grid;
+    background-color: rgb(9, 29, 11);
     color: white;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 1vh;
 }
 .Footer > .info
 {
     grid-column: 1;
+    padding: 1vh;
 }
 .Footer > .service
 {
     grid-column: 2;
+    padding: 1vh;
 }
 .Footer > .more
 {
     grid-column: 3;
+    padding: 1vh;
 }
 .Footer > .warranty
 {
     grid-column: 4;
+    padding: 1vh;
+}
+.copyRight
+{
+    padding-left: 1rem;
 }
