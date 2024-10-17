@@ -1,0 +1,40 @@
+.gallery1 {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+h2 {
+    width: 100%;
+}
+.gallery1 > .item {
+    background-color: lightgrey;
+    min-width: 200px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery1 > .item > h3 {
+    display: grid;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height:100px;
+    margin: auto;
+}
+.gallery2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 30px);
+    gap: 15px;
+}
+.gallery2 > .item {
+    background-color: lightgrey;
+}
+.gallery2 > .item > h3 {
+    text-align: center;
+    align-content: center;
+    line-height: 0px;
+}

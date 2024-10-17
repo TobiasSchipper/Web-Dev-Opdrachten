@@ -1,0 +1,44 @@
+*
+{
+    box-sizing: content-box;
+}
+
+body
+{
+    margin: 0;
+    background-color: darkgreen;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 20px 0;
+}
+
+.content
+{
+    background-color: grey;
+    grid-column: 2/3;
+    min-height: 100vh;
+    border-radius: 15px;
+
+    padding: 0px 20px;
+}
+
+form
+{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+
+input[type=text]
+{
+    max-width: 200px;
+}
+
+.nomargin
+{
+    margin-block:0px;
+}
+
+:is(form) > :is(p, div, select, input, label)
+{
+    margin-block: 5px;
+}

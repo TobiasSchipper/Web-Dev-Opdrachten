@@ -1,0 +1,133 @@
+@font-face  
+{ 
+font-family: "YoungSerif"; 
+src: url("../Content/Assets/assets/fonts/young-serif/YoungSerif-Regular.ttf"); 
+}
+body {
+    display: grid;
+    background-color: bisque;
+    font-family: "YoungSerif";
+    margin: 0;
+    width: 100vw;
+    height: 150vh;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.content {
+    background-color: white;
+    height: 115%;
+    border-radius: 3%;
+    margin: 10px;
+    justify-content: center;
+    grid-column: 2;
+    flex-wrap: nowrap;
+    padding: 25px;
+}
+img {
+    margin-top: 5px;
+    border-radius: 3%;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    line-height: 10%;
+}
+
+.maintext {
+    justify-content: center;
+    height: 140px;
+    width: 90%;
+    text-align: left;
+    font-size: medium;
+}
+.maintext > h1 {
+    font-weight: bold;
+    font-size: x-large;
+}
+.maintext > h1 > p {
+    font-weight: lighter;
+    font-size: smaller;
+}
+.preptime {
+    background-color: lavenderblush;
+    border-radius: 5%;
+    justify-content: center;
+    padding-left: 15px;
+    padding-top: 2px;
+    height: 200px;
+    width: auto;
+}
+.preptime > h3 {
+    color: rgb(114, 49, 100);
+    font-weight: bold;
+}
+.preptime > h3 > ul > li {
+    color: black;
+    justify-content: center;
+    line-height: 40px;
+    min-width: fit-content;
+    font-weight: lighter;
+}
+.ingredients {
+    width: auto;
+    height: 200px;
+    line-height: 30px;
+}
+.ingredients > h2 {
+    color: rgb(142, 68, 36);
+    font-weight: bold;
+}
+.ingredients > h2 > ul > li {
+    font-weight: lighter;
+}
+.instructions {
+    width: auto;
+    line-height: 30px;
+}
+.instructions > h2 {
+    color: rgb(142, 68, 36);
+    font-weight: bold;
+}
+.instructions > h2 > ol > li {
+    font-weight: lighter;
+    line-height: 30px;
+}
+.instructions ol ::marker {
+    color: rgb(142, 68, 36);
+}
+.ingredients ul ::marker {
+    color: rgb(142, 68, 36);
+}
+.preptime ul ::marker {
+    color: rgb(114, 49, 100);
+}
+.nutrition {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    line-height: 30px;
+    height: 50px;
+}
+.nutrition ul {
+    grid-column: 1;
+}
+.nutrition ul ::marker {
+    color: white;
+}
+.nutritionvalue ul {
+    grid-column: 2;
+}
+.nutritionvalue ul ::marker {
+    color: white;
+}
+.nutritionvalue ul li {
+    color: rgb(142, 68, 36);
+}
+.nutrition h2 {
+    color: rgb(142, 68, 36);
+    grid-column: 1;
+    height: 10px;
+}
+.nutrition p {
+    grid-column: 1;
+    height: 50px;
+}
+

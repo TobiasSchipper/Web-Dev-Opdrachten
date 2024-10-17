@@ -1,0 +1,16 @@
+h1{
+    color:blue
+}
+h2{
+    color: red;
+}
+.museumfotos img {
+    width: 100px;
+    height: 80px;
+    border: 5px solid blue;
+}
+.broegfotos img {
+    width: 100px;
+    height: 80px;
+    border: 5px solid blue;
+}

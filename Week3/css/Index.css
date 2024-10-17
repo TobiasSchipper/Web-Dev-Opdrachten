@@ -1,0 +1,94 @@
+@font-face
+{
+font-family: "YoungSerif";
+src: url("../fonts/young-serif/YoungSerif-Regular.ttf");
+}
+body
+{
+    display: grid;
+    background-color: bisque;
+    font-family: "YoungSerif";
+    margin: 0;
+    width: 100vw;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+main
+{
+    background-color: white;
+    border-radius: 3%;
+    justify-content: center;
+    grid-column: 2;
+    flex-wrap: nowrap;
+    padding: 25px;
+    margin-block: 10%;
+}
+.topImg > img
+{
+    margin-top: 5px;
+    border-radius: 3%;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    line-height: 10%;
+}
+.kopTekst
+{
+    text-align: left;
+    font-size: medium;
+    padding-block: 1rem;
+}
+.VoorbereidTijd
+{
+    text-align: left;
+    font-size: medium;
+    padding-block: 1rem;
+    margin-left: 10%;
+}
+.VoorbereidTijd > h3
+{
+    color: brown;
+}
+.ingredients > h2
+{
+    color: brown;
+}
+.instructions > h2
+{
+    color: brown;
+}
+.instructions ol ::marker {
+    color: brown;
+}
+.ingredients ul ::marker {
+    color: brown;
+}
+.instructions > h2 > ol > li {
+    font-weight: lighter;
+    line-height: 30px;
+}
+.nutrition > h2
+{
+    color: brown;
+}
+.nutrition {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    line-height: 30px;
+}
+.nutritionText
+{
+    grid-column: 1;
+}
+.nutritionText ul ::marker 
+{
+    color: white;
+}
+.nutritionValue
+{
+    grid-column: 2;
+}
+.nutritionValue ul ::marker 
+{
+    color: white;
+}

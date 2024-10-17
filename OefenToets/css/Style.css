@@ -1,0 +1,47 @@
+.Header
+{
+    justify-items: center;
+    display: grid;
+    height: auto;
+}
+
+.Content
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.Content > .login
+{
+    grid-column: 1;
+}
+.Content > .centerContent
+{
+    grid-column: 2;
+}
+.Content > .welcome
+{
+    grid-column: 3;
+}
+
+.Footer
+{
+    background-color: black;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.Footer > .info
+{
+    grid-column: 1;
+}
+.Footer > .service
+{
+    grid-column: 2;
+}
+.Footer > .more
+{
+    grid-column: 3;
+}
+.Footer > .warranty
+{
+    grid-column: 4;
+}

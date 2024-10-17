@@ -1,0 +1,47 @@
+.gallery {
+    display: flex;
+    background-color: beige;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.5vw;
+}
+h2 
+{
+    width: 100%;
+}
+.gallery > .item1
+{
+    background-color: grey;
+    min-width: 15vw;
+    min-height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery > .item1 > h3
+{
+    display: grid;
+    width: 5vw;
+    height: 5vh;
+    text-align: center;
+    line-height: 4vh;
+    margin: auto;
+}
+
+.gallery1
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2vw, 1vh);
+    gap: 0.5vw;
+}
+.gallery1 > .item2
+{
+    background-color: gray
+}
+.gallery1 > .item2 > h3
+{
+    text-align: center;
+    align-content: center;
+    line-height: 1vh;
+}
