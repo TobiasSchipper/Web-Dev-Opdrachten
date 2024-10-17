@@ -2,8 +2,13 @@
 
     if($_SERVER["REQUEST_METHOD"] == "POST")
     { 
-        $email = filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
-        $Wachtw = filter_input(INPUT_POST, "WachtW");
+        $email = filter_input(INPUT_POST, "email",);
+        $Password = filter_input(INPUT_POST, "password");
+        $user = filter_input(INPUT_POST, "user");
+    }
+    else
+    {
+        ;  
     }
 ?>
 <!DOCTYPE html>
@@ -20,33 +25,81 @@
         <img src="./img/logo_geekaboo.png" alt="Logo-Geekaboo">
     </div>
     <div class="Menu">
-        <a>CONTACT</a>
-        <a>REGISTER</a>
-        <a>HOMEPAGE</a>
+        <a href="./pages/Error.html">CONTACT</a>
+        <a href="./pages/register.html">REGISTER</a>
+        <a href="./index.php">HOMEPAGE</a>
     </div>
     <div class="Content">
         <div class="login">
             <h2>Login</h2>
+            <?php
+                if($_SERVER["REQUEST_METHOD"] == "POST")
+                {
+                    if ($email == "user" || $email == "user@test.com")
+                    {
+                        // Doorgaan met Controle
+                        if ($Password == "user" && $user == "user")
+                        { 
+                            echo "<h3>Welcome User!</h3>";
+                        }
+                        else
+                        {   
+                            // Echo Foutmelding 
+                            echo "<h3>Please select the correct user and enter a valid password</h3>";
+                        }
+                    }
+                    elseif ($email == "admin" || $email == "admin@test.com")
+                    {
+                        if ($Password == "admin" && $user == "admin")
+                        { 
+                            echo "<h3>Welcome Admin!</h3>";
+                        }
+                        else
+                        {
+                            echo "<h3>Please select the correct user and enter a valid password</h3>";
+                        }
+                    }
+                    else
+                    {
+                        // Echo Foutmelding 
+                        echo "<h3>Please enter a valid email/username</h3>";
+                    }
+                }
+            ?>
             <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
             <div>
-                <label for="email">Email:</label>
+                <label for="email">Username/Email:</label>
                 <input type="text" name="email" id="email">
-                <label for="vNaam">Password:</label>
-                <input type="text" name="Wachtwoord" id="WachtW">
-                <div>
-                    <label for="">User:</label>
-                    <input type="radio" name="aantal" value="user" id="user">
-                    <label for="">Admin:</label>
-                    <input type="radio" name="aantal" value="admin" id="admin">
-                </div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="Password">
             </div>
-            <div>
+            <div class="logInButton">
                 <input type="submit" value="Login">
             </div>
+            <div>
+                    <label for="">User:</label>
+                    <input type="radio" name="user" value="user" id="user">
+                    <label for="">Admin:</label>
+                    <input type="radio" name="user" value="admin" id="admin">
+            </div>
+            <a href="./pages/forgot.html">Forgot password?</a>
+            <a href="./pages/register.html">Register</a>
             </form>
         </div>
         <div class="centerContent">
             <h2>Browsers</h2>
+            <p>We create websites for:</p>
+            <div class="Browsers">
+                <img src="./img/ff.png" alt="FireFox">
+                <img src="./img/ie.png" alt="Internet Explorer">
+                <img src="./img/opera.png" alt="Opera">
+                <img src="./img/safari.png" alt="Safari"> 
+                <br>
+                <img src="./img/netscape.png" alt="Netscape">
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+            </p>
         </div>
         <div class="welcome">
             <h2>Welcome to GeekaBoo</h2>

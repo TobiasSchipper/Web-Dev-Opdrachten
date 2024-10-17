@@ -37,9 +37,17 @@
 {
     color: darkred;
 }
+.login > h3
+{
+    color: darkred;
+}
 form
 {
     max-width: 10rem;
+}
+.logInButton > input
+{
+    min-width: 50%;
 }
 
 .Content > .centerContent
@@ -50,10 +58,18 @@ form
 {
     padding: 1rem;
     background-color: rgb(255, 248, 156);
+
 }
 .centerContent > h2
 {
     color: rgb(75, 75, 22);
+}
+.centerContent > .Browsers
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 5%;
 }
 
 .Content > .welcome
@@ -63,7 +79,6 @@ form
 .welcome
 {
     background-color: lightgreen;
-    align-self: center;
     padding: 1rem;
 }
 .welcome > h2
